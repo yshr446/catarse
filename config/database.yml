@@ -45,4 +45,10 @@ test:
   database: catarse_test
   pool: 5
   username: ys
-  password: 
+  password:
+
+production:
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
